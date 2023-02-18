@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header {
+    height: 90px;
+    display: flex;
+        justify-content: space-around;
+    align-items: center;
+    }
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Orbitron', sans-serif;
+}
+
+li:hover {
+    color: aqua;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.banner-1 {
+    background-image: url('https://imgs.search.brave.com/M_94NAkZ2aPNomac6juRW2QxRZEHO3-Hf1fbQlQI4lo/rs:fit:600:600:1/g:ce/aHR0cHM6Ly9sdW1p/ZXJlLWEuYWthbWFp/aGQubmV0L3YxL2lt/YWdlcy9vcGVuLXVy/aTIwMTUwNDIyLTIw/ODEwLTFxYWl2Yzdf/NzlmMWY2ZjMuanBl/Zz9yZWdpb249MCww/LDYwMCw2MDA')
+}
+
+.banner-2 {
+    background-image: url('https://imgs.search.brave.com/yp3jgSA0elw_kXOxkrV823djpJYeuxvWQs-rD-FTcbw/rs:fit:900:619:1/g:ce/aHR0cDovLzEuYnAu/YmxvZ3Nwb3QuY29t/L19lUTVCQm5Xal9U/OC9UUXVEalhObVpG/SS9BQUFBQUFBQVhR/SS9OVlVVTEVqRklm/TS9zMTYwMC9Ucm9u/X2xlZ2FjeV9fX1F1/b3JyYV9ieV9lbGNs/b24ucG5n')
+}
+
+.banner-3 {
+    background-image: url('https://imgs.search.brave.com/Ged9Yb7zhvzX4bgO4-f2B00QK3tBSnMLJ7PWOwepihY/rs:fit:1200:804:1/g:ce/aHR0cHM6Ly9kaXNj/b3Vyc2UuZGlzbmV5/aGVyb2VzZ2FtZS5j/b20vdXBsb2Fkcy9k/ZWZhdWx0L29yaWdp/bmFsLzJYL2QvZDY1/YjNjMWE4NjVhYzJl/ZjZkYjU0NGM5ODFj/N2RlNDIxY2MyNDY3/YS5qcGVn')
+}
+
+.banner-4 {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/643/929/198/movies-tron-legacy-tron-2-wallpaper-preview.jpg');
+
+}
+
+.banner-5 {
+    background-image: url('https://static.wikia.nocookie.net/tron/images/a/ac/Micheal-Sheen-Tron-1-.jpg');
+}
+
+.banner-6 {
+    background-image: url('https://i.pinimg.com/originals/51/17/cb/5117cbd366e1e898f8dc43dad725d74c.jpg');
+}
+
+.banner-7 {
+    background-image: url('https://static.wikia.nocookie.net/tron/images/3/34/Jarvis.jpg');
+}
+
+.banner-8 {
+    background-image: url('https://static.wikia.nocookie.net/tron/images/f/fb/Rinzler.png');
+}
+
+.banner-9 {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1e564e08-354b-42af-8eb2-2d2231530216/d366dh7-5717c578-e218-44b6-9984-437400aed8fd.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFlNTY0ZTA4LTM1NGItNDJhZi04ZWIyLTJkMjIzMTUzMDIxNlwvZDM2NmRoNy01NzE3YzU3OC1lMjE4LTQ0YjYtOTk4NC00Mzc0MDBhZWQ4ZmQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.D1aw5DtOj9b3gDuSddP0cDR6rh-KWwiCiKBF03TEnA8');
+}
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+@media(max-width: 768px) {
+
+.cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+}
+}
